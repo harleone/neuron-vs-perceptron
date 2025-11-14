@@ -38,7 +38,7 @@ print(f"LIF neuron fired {len(spikes)} times in {time[-1]} ms")
 
 #---------------------------------------------------
 # Part B: Artificial neuron (Perceptron)
-
+#----------------------------------------------------
 np.random.seed(0)
 X = np.vstack([np.random.randn(50,2) + np.array([1,1]), 
               np.random.randn(50,2) + np.array([-1,-1])])
@@ -63,4 +63,5 @@ plt.plot(xline, -(w[0]*xline +b)/w[1], 'k--')
 plt.title("Perceptron Decision Boundary")
 plt.xlabel("x1")
 plt.ylabel("x2")
+
 plt.show()
